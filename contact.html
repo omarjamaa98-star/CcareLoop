@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CareLoop for support, partnerships, or questions about our AI-powered eldercare coordination platform.">
+    <title>Contact CareLoop - Get in Touch with Our Team</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+                    <i class="fas fa-heart-pulse"></i>
+                    <span>CareLoop</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#demo" class="cta-button" onclick="openDemo()">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Get in <span class="highlight">Touch</span></h1>
+                    <p class="hero-subtitle">Whether you're a family looking for eldercare coordination support, a healthcare provider interested in partnerships, or have questions about our platform, we're here to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>For Families</h3>
+                    <p>Questions about getting started, pricing, or how CareLoop can help your family coordinate eldercare.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:families@careloop.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            families@careloop.com
+                        </a>
+                        <a href="tel:+1-555-CARE-LOOP" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            1-555-CARE-LOOP
+                        </a>
+                    </div>
+                    <button class="primary-btn" onclick="openDemo()">Start Free Trial</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Healthcare Providers</h3>
+                    <p>Interested in integrations, partnerships, or how CareLoop can support your patients and their families.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:providers@careloop.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            providers@careloop.com
+                        </a>
+                        <a href="tel:+1-555-CARE-PRO" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            1-555-CARE-PRO
+                        </a>
+                    </div>
+                    <button class="secondary-btn" onclick="openPartnershipForm()">Partnership Inquiry</button>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>Technical support, account questions, or help using CareLoop features for existing customers.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:support@careloop.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            support@careloop.com
+                        </a>
+                        <a href="#" class="contact-method" onclick="openLiveChat()">
+                            <i class="fas fa-comments"></i>
+                            Live Chat (24/7)
+                        </a>
+                    </div>
+                    <div class="support-hours">
+                        <p><strong>Phone Support Hours:</strong><br>
+                        Monday-Friday: 6 AM - 10 PM PST<br>
+                        Saturday-Sunday: 8 AM - 6 PM PST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Us a <span class="highlight">Message</span></h2>
+                <p>Have a specific question or need personalized assistance? Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            <div class="form-container">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry-type">Type of Inquiry *</label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">Select inquiry type</option>
+                            <option value="family-support">Family Support & Questions</option>
+                            <option value="technical-support">Technical Support</option>
+                            <option value="partnership">Healthcare Provider Partnership</option>
+                            <option value="media">Media & Press</option>
+                            <option value="careers">Careers & Jobs</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="care-situation">Current Care Situation (Optional)</label>
+                        <select id="care-situation" name="care-situation">
+                            <option value="">Select if applicable</option>
+                            <option value="single-parent">Caring for one parent</option>
+                            <option value="both-parents">Caring for both parents</option>
+                            <option value="multiple-family">Multiple family members need care</option>
+                            <option value="assisted-living">Parent in assisted living</option>
+                            <option value="memory-care">Memory care needs</option>
+                            <option value="post-hospital">Post-hospital care coordination</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please describe your question or how we can help you..." required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            I'd like to receive updates about new CareLoop features and eldercare resources
+                        </label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Service</a> *
+                        </label>
+                    </div>
+                    <button type="submit" class="primary-btn large">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Information -->
+    <section class="office-info">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our <span class="highlight">Office</span></h2>
+                <p>While we primarily serve families remotely, you're welcome to visit our headquarters in San Francisco.</p>
+            </div>
+            <div class="office-content">
+                <div class="office-details">
+                    <div class="office-card">
+                        <h3>San Francisco Headquarters</h3>
+                        <div class="office-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>123 Healthcare Innovation Drive<br>
+                                San Francisco, CA 94105</p>
+                            </div>
+                        </div>
+                        <div class="office-hours">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p><strong>Office Hours:</strong><br>
+                                Monday-Friday: 9 AM - 6 PM PST<br>
+                                <em>Visits by appointment only</em></p>
+                            </div>
+                        </div>
+                        <div class="office-contact">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>Main Office: (415) 555-CARE<br>
+                                Reception: (415) 555-0123</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="office-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map<br><small>Click to open in Google Maps</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Quick answers to common questions. Don't see yours? Contact us directly.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How quickly can I get started with CareLoop?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most families can set up their CareLoop account and start coordinating care within 10-15 minutes. Our onboarding process guides you through adding family members, medications, and healthcare providers step by step.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Is my family's health information secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. CareLoop is HIPAA compliant and uses bank-level encryption to protect all health information. You control exactly what information is shared with family members and healthcare providers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you integrate with my doctor's office?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We integrate with over 50 major healthcare systems and are continuously adding new providers. If your doctor's office uses Epic, Cerner, or Allscripts, integration is usually available. Contact us to check specific providers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What if my parent isn't comfortable with technology?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>CareLoop is designed for all comfort levels with technology. We offer phone-based daily check-ins, large-button interfaces, and family members can manage most coordination tasks remotely. Our support team also provides personalized onboarding assistance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can multiple family members use the same account?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! CareLoop is built for family coordination. Multiple adult children can share caregiving responsibilities with different permission levels, and everyone stays informed through shared updates and communications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get <span class="highlight">Started</span>?</h2>
+                <p>Join thousands of families who have transformed their eldercare coordination with CareLoop's AI-powered platform.</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn large" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
+                    </button>
+                    <button class="secondary-btn large" onclick="openLiveChat()">
+                        <i class="fas fa-comments"></i>
+                        Chat with Support
+                    </button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>30-day free trial</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 support available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart-pulse"></i>
+                        <span>CareLoop</span>
+                    </div>
+                    <p>AI-powered eldercare coordination that gives families peace of mind and aging parents the support they deserve.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#integrations">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#status">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CareLoop. All rights reserved. HIPAA compliant eldercare coordination platform.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div id="demo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Start Your Free Trial</h2>
+            <form class="demo-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="care-situation">Care Situation</label>
+                    <select id="care-situation" name="care-situation" required>
+                        <option value="">Select your situation</option>
+                        <option value="single-parent">Caring for one parent</option>
+                        <option value="both-parents">Caring for both parents</option>
+                        <option value="multiple-family">Multiple family members need care</option>
+                        <option value="assisted-living">Parent in assisted living</option>
+                    </select>
+                </div>
+                <button type="submit" class="primary-btn">Start Free Trial</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleContactFormSubmission(this);
+        });
+
+        function handleContactFormSubmission(form) {
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                console.log('Contact form submitted:', data);
+                
+                // Show success message
+                showContactSuccessMessage();
+                
+                // Reset form
+                form.reset();
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        }
+
+        function showContactSuccessMessage() {
+            const successDiv = document.createElement('div');
+            successDiv.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 100px;
+                    right: 20px;
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+                    z-index: 3000;
+                    animation: slideIn 0.3s ease;
+                ">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Message sent! We'll respond within 24 hours.</span>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(successDiv);
+            
+            setTimeout(() => {
+                successDiv.remove();
+            }, 5000);
+        }
+
+        // FAQ toggle functionality
+        function toggleFAQ(element) {
+            const faqItem = element.parentNode;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('i');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Placeholder functions for additional functionality
+        function openPartnershipForm() {
+            alert('Partnership inquiry form coming soon! For now, please email providers@careloop.com');
+        }
+
+        function openLiveChat() {
+            alert('Live chat widget coming soon! For immediate assistance, please call 1-555-CARE-LOOP');
+        }
+    </script>
+
+    <style>
+        .active {
+            color: #667eea !important;
+            font-weight: 600;
+        }
+        
+        .contact-options {
+            background: #fff;
+            padding: 100px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .contact-methods {
+            margin: 1.5rem 0;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #667eea;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            justify-content: center;
+            font-weight: 500;
+        }
+        
+        .contact-method:hover {
+            color: #764ba2;
+        }
+        
+        .support-hours {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .contact-form-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            cursor: pointer;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+        
+        .checkbox-label a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .checkbox-label a:hover {
+            text-decoration: underline;
+        }
+        
+        .office-info {
+            background: #fff;
+        }
+        
+        .office-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .office-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #eee;
+        }
+        
+        .office-address,
+        .office-hours,
+        .office-contact {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .office-address i,
+        .office-hours i,
+        .office-contact i {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+        }
+        
+        .map-placeholder {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 16px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #667eea;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .map-placeholder:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .faq-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .faq-question i {
+            color: #667eea;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #f8f9fa;
+        }
+        
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .office-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareLoop - AI-Powered Eldercare Management Platform. Simplify caring for your aging parents with intelligent coordination, medication management, and family communication tools.">
+    <meta name="keywords" content="eldercare, caregiving, medication management, family coordination, AI assistant, aging parents">
+    <title>CareLoop - AI-Powered Eldercare Management</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart-pulse"></i>
+                <span>CareLoop</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#demo" class="cta-button">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Your AI Assistant for <span class="highlight">Eldercare Coordination</span></h1>
+                    <p class="hero-subtitle">Eliminate the stress and complexity of caring for aging parents. CareLoop handles medication management, appointment scheduling, and family coordination so you can focus on what matters most.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <strong>25%</strong>
+                            <span>Improvement in medication adherence</span>
+                        </div>
+                        <div class="stat">
+                            <strong>40%</strong>
+                            <span>Reduction in caregiver stress</span>
+                        </div>
+                        <div class="stat">
+                            <strong>15%</strong>
+                            <span>Fewer missed appointments</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="primary-btn" onclick="openDemo()">
+                            <i class="fas fa-play-circle"></i>
+                            Start Free Trial
+                        </button>
+                        <button class="secondary-btn" onclick="scrollToSection('how-it-works')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="dashboard-preview">
+                        <div class="dashboard-header">
+                            <div class="user-info">
+                                <div class="avatar"></div>
+                                <div class="user-details">
+                                    <h4>Sarah's Care Dashboard</h4>
+                                    <p>Managing care for Mom & Dad</p>
+                                </div>
+                            </div>
+                            <div class="notifications">
+                                <i class="fas fa-bell"></i>
+                                <span class="notification-count">3</span>
+                            </div>
+                        </div>
+                        <div class="dashboard-cards">
+                            <div class="card medication-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-pills"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>Medications</h5>
+                                    <p>All doses taken today ✓</p>
+                                </div>
+                            </div>
+                            <div class="card appointment-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>Next Appointment</h5>
+                                    <p>Dr. Johnson - Tomorrow 2:30 PM</p>
+                                </div>
+                            </div>
+                            <div class="card checkin-card">
+                                <div class="card-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h5>Daily Check-in</h5>
+                                    <p>Feeling good today 😊</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need for <span class="highlight">Complete Care Coordination</span></h2>
+                <p>CareLoop's AI-powered platform handles the invisible work of eldercare, giving you peace of mind and your parents the support they deserve.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Smart Medication Management</h3>
+                    <p>AI-powered medication tracking with automatic reminders, drug interaction alerts, and prescription refill coordination.</p>
+                    <ul class="feature-list">
+                        <li>Automated medication reminders</li>
+                        <li>Drug interaction warnings</li>
+                        <li>Prescription refill alerts</li>
+                        <li>Pharmacy coordination</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Appointment Coordination</h3>
+                    <p>Intelligent scheduling that coordinates with healthcare providers, manages transportation, and prepares for appointments.</p>
+                    <ul class="feature-list">
+                        <li>Automated appointment scheduling</li>
+                        <li>Provider integration</li>
+                        <li>Transportation coordination</li>
+                        <li>Pre-appointment summaries</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Daily Health Check-ins</h3>
+                    <p>AI conversations that monitor health, mood, and wellbeing with intelligent alerts for concerning changes.</p>
+                    <ul class="feature-list">
+                        <li>Daily wellness conversations</li>
+                        <li>Health trend monitoring</li>
+                        <li>Early warning alerts</li>
+                        <li>Mood and cognitive tracking</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Communication Hub</h3>
+                    <p>Coordinated family communication with task sharing, conversation scripts, and progress tracking for all caregivers.</p>
+                    <ul class="feature-list">
+                        <li>Shared family calendar</li>
+                        <li>Task assignment system</li>
+                        <li>Conversation guidance</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Emergency Response</h3>
+                    <p>24/7 monitoring with automatic emergency detection and immediate family notification systems.</p>
+                    <ul class="feature-list">
+                        <li>Emergency detection</li>
+                        <li>Automatic family alerts</li>
+                        <li>Medical alert integration</li>
+                        <li>Emergency contact system</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Health Analytics</h3>
+                    <p>Comprehensive health insights with predictive analytics to identify trends and prevent health issues.</p>
+                    <ul class="feature-list">
+                        <li>Health trend analysis</li>
+                        <li>Predictive insights</li>
+                        <li>Care plan optimization</li>
+                        <li>Provider reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How <span class="highlight">CareLoop</span> Works</h2>
+                <p>Get started in minutes and see immediate improvements in care coordination</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Set Up Your Family</h3>
+                        <p>Create profiles for family members and care recipients. Add medications, healthcare providers, and emergency contacts.</p>
+                        <div class="step-visual">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Learns Your Routine</h3>
+                        <p>Our AI assistant learns medication schedules, appointment patterns, and family preferences to provide personalized care coordination.</p>
+                        <div class="step-visual">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Daily Care Coordination</h3>
+                        <p>Receive daily check-ins, medication reminders, appointment alerts, and family updates automatically.</p>
+                        <div class="step-visual">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Peace of Mind</h3>
+                        <p>Monitor health trends, coordinate with healthcare providers, and ensure nothing falls through the cracks.</p>
+                        <div class="step-visual">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Thousands of <span class="highlight">Caring Families</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"CareLoop has been a lifesaver. I no longer worry about whether Dad took his medications or if we're missing important appointments. The AI check-ins give me daily peace of mind."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Caring for father with diabetes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The family coordination features have transformed how our siblings work together to care for Mom. Everyone stays informed and we can share responsibilities fairly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Family of 4 siblings</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a healthcare provider, I love how CareLoop keeps families organized. The appointment summaries and medication tracking help me provide better care."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Dr. Amanda Rodriguez</h4>
+                            <span>Geriatrician</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent <span class="highlight">Pricing</span></h2>
+                <p>Choose the plan that fits your family's needs. All plans include our core AI coordination features.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Essential</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for single-parent care</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 care recipient</li>
+                        <li><i class="fas fa-check"></i> Basic medication management</li>
+                        <li><i class="fas fa-check"></i> Daily AI check-ins</li>
+                        <li><i class="fas fa-check"></i> Appointment reminders</li>
+                        <li><i class="fas fa-check"></i> Family notifications</li>
+                        <li><i class="fas fa-check"></i> Mobile app access</li>
+                    </ul>
+                    <button class="pricing-btn">Start Free Trial</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Family</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For families with multiple caregivers</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 2 care recipients</li>
+                        <li><i class="fas fa-check"></i> Advanced medication tracking</li>
+                        <li><i class="fas fa-check"></i> AI health analytics</li>
+                        <li><i class="fas fa-check"></i> Provider integrations</li>
+                        <li><i class="fas fa-check"></i> Family coordination tools</li>
+                        <li><i class="fas fa-check"></i> Emergency response system</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <button class="pricing-btn primary">Start Free Trial</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Extended</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For large families or complex care needs</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited care recipients</li>
+                        <li><i class="fas fa-check"></i> Predictive health insights</li>
+                        <li><i class="fas fa-check"></i> Care plan optimization</li>
+                        <li><i class="fas fa-check"></i> Telemedicine integration</li>
+                        <li><i class="fas fa-check"></i> Advanced family tools</li>
+                        <li><i class="fas fa-check"></i> 24/7 emergency monitoring</li>
+                        <li><i class="fas fa-check"></i> Dedicated care coordinator</li>
+                    </ul>
+                    <button class="pricing-btn">Start Free Trial</button>
+                </div>
+            </div>
+            <div class="pricing-footer">
+                <p><i class="fas fa-shield-alt"></i> All plans include HIPAA-compliant security and 30-day money-back guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your <span class="highlight">Eldercare Experience</span>?</h2>
+                <p>Join thousands of families who have reduced caregiving stress and improved care coordination with CareLoop's AI-powered platform.</p>
+                <div class="cta-buttons">
+                    <button class="primary-btn large" onclick="openDemo()">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Free Trial
+                    </button>
+                    <button class="secondary-btn large" onclick="openContact()">
+                        <i class="fas fa-phone"></i>
+                        Schedule a Demo
+                    </button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>30-day free trial</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Setup in under 10 minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart-pulse"></i>
+                        <span>CareLoop</span>
+                    </div>
+                    <p>AI-powered eldercare coordination that gives families peace of mind and aging parents the support they deserve.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#integrations">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#status">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CareLoop. All rights reserved. HIPAA compliant eldercare coordination platform.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div id="demo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Start Your Free Trial</h2>
+            <form class="demo-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="care-situation">Care Situation</label>
+                    <select id="care-situation" name="care-situation" required>
+                        <option value="">Select your situation</option>
+                        <option value="single-parent">Caring for one parent</option>
+                        <option value="both-parents">Caring for both parents</option>
+                        <option value="multiple-family">Multiple family members need care</option>
+                        <option value="assisted-living">Parent in assisted living</option>
+                    </select>
+                </div>
+                <button type="submit" class="primary-btn">Start Free Trial</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
